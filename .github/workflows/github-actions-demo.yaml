@@ -1,9 +1,9 @@
 name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: [push]
+on: [push] #if someone push codes to repository , this workflow should be trigged
 jobs:
-  Explore-GitHub-Actions:
-    runs-on: ubuntu-latest
+  Explore-GitHub-Actions: #this is job name
+    runs-on: ubuntu-latest #job should execute in fresh ubuntu linux server(virtual machine) hosted by github
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
